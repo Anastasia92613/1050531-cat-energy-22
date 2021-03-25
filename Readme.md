@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анастасия](https://up.htmlacademy.ru/adaptive/22/user/1050531).
-* Наставник: [Александр Тубольцев] (https://htmlacademy.ru/profile/id86460).
+* Наставник: [Александр Тубольцев](https://htmlacademy.ru/profile/id86460).
 
 ---
 
