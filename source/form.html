@@ -9,7 +9,7 @@
 <body class="page__body">
     <header class="page-header">
 
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo" href="index.html">
             <img src="img/logo-icon-mobile.svg" width="34" height="38" alt="">
             <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </a>
@@ -17,14 +17,14 @@
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--current">
-                    <a>Главная</a>
+                <li class="main-nav__item">
+                    <a href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="main-nav__item">
-                    <a href="form.html">Подбор программы</a>
+                <li class="main-nav__item main-nav__item--current">
+                    <a>Подбор программы</a>
                 </li>
             </ul>
         </nav>
@@ -37,89 +37,90 @@
             <p class="proem_text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </section>
 
-        <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset class="parameter">
+        <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+            <fieldset class="form-section">
                 <legend class="visually-hidden">Данные кота</legend>
-                <ul class="parameter__list">
-                    <li class="parameter__item">
-                        <label class="parameter__label label" for="name">Имя:*</label>
-                        <input class="parameter__input placeholder" id="name" type="text" name="name" placeholder="Барсик">
+                <ul class="form-section__list">
+                    <li class="form-section__item">
+                        <label class="form-section__label" for="name">Имя:*</label>
+                        <input class="form-section__input" id="name" type="text" name="name" placeholder="Барсик">
                     </li>
-                    <li class="parameter__item">
-                        <label class="parameter__label label" for="">Вес (кг):*</label>
-                        <input class="parameter__input placeholder" id="weight" type="text" name="weight" placeholder="7">
+                    <li class="form-section__item">
+                        <label class="form-section__label" for="">Вес (кг):*</label>
+                        <input class="form-section__input" id="weight" type="text" name="weight" placeholder="7">
                     </li>
-                    <li class="parameter__item">
-                        <label class="parameter__label label" for="age">Возраст (лет):*</label>
-                        <input class="parameter__input placeholder" id="age" type="text" name="age" placeholder="Барсик">
+                    <li class="form-section__item">
+                        <label class="form-section__label" for="age">Возраст (лет):*</label>
+                        <input class="form-section__input" id="age" type="text" name="age" placeholder="Барсик">
                     </li>
                 </ul>
             </fieldset>
 
-            <fieldset class="task">
+            <fieldset class="form-section">
                 <legend class="visually-hidden">Цель программы</legend>
-                <ul class="task__list">
-                    <li class="task__item">
-                        <input class="task__radio" type="radio" name="slim" id="slim" checked>
-                        <label class="task__label label" for="slim">Похудение</label>
+                <ul class="form-section__list">
+                    <li class="form-section__item">
+                        <input class="form-section__radio" type="radio" name="slim" id="slim" checked>
+                        <label class="form-section__label" for="slim">Похудение</label>
                     </li>
-                    <li class="task__item">
-                        <input class="task__radio" type="radio" name="weight" id="weight">
-                        <label class="task__label label" for="weight">Набор массы</label>
+                    <li class="form-section__item">
+                        <input class="form-section__radio" type="radio" name="weight" id="weight">
+                        <label class="form-section__label" for="weight">Набор массы</label>
                     </li>
-                    <li class="task__item">
-                        <input class="task__radio" type="radio" name="advice" id="advice">
-                        <label class="task__label label" for="advice">Не знаю (нужен ваш совет)</label>
-                    </li>
-                </ul>
-            </fieldset>
-
-            <fieldset class="connection">
-                <legend class="connection__title form-title">Контактные данные (владельца кота)</legend>
-                <ul class="connection__list">
-                    <li class="connection__item">
-                        <label class="connection__label label" for="mail">E-mail:*</label>
-                        <input class="connection__input input" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com">
-                    </li>
-                    <li class="connection__item">
-                        <label class="connection__label label" for="phone">Телефон:*</label>
-                        <input class="connection__input input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                    <li class="form-section__item">
+                        <input class="form-section__radio" type="radio" name="advice" id="advice">
+                        <label class="form-section__label" for="advice">Не знаю (нужен ваш совет)</label>
                     </li>
                 </ul>
             </fieldset>
 
-            <fieldset class="message">
-                <legend class="message__title form-title">Комментарий</legend>
-                <textarea class="message__input input" name="message" id="message" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            <fieldset class="form-section">
+                <legend class="form-section__title">Контактные данные (владельца кота)</legend>
+                <ul class="form-section__list">
+                    <li class="form-section__item">
+                        <label class="form-section__label" for="mail">E-mail:*</label>
+                        <input class="form-section__input" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com">
+                    </li>
+                    <li class="form-section__item">
+                        <label class="form-section__label" for="phone">Телефон:*</label>
+                        <input class="form-section__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                    </li>
+                </ul>
             </fieldset>
 
-            <fieldset class="optionally">
-                <legend class="optionally__title form-title">Дополнительно</legend>
-                <ul class="optionally__list">
-                    <li class="optionally__item">
-                        <input class="optionally__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-                        <label class="optionally__label label" for="sweetener">сахарозаменитель</label>
+            <fieldset class="form-section">
+                <label class="form-section__title">Комментарий</label>
+                <textarea class="form-section__input" name="message" id="message" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend class="form-section__title">Дополнительно</legend>
+                <ul class="form-section__list">
+                    <li class="form-section__item">
+                        <input class="form-section__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                        <label class="form-section__label" for="sweetener">сахарозаменитель</label>
                     </li>
-                    <li class="optionally__item">
-                        <input class="optionally__checkbox" type="checkbox" name="water" id="water">
-                        <label class="optionally__label label" for="water">питьевая вода</label>
+                    <li class="form-section__item">
+                        <input class="form-section__checkbox" type="checkbox" name="water" id="water">
+                        <label class="form-section__label" for="water">питьевая вода</label>
                     </li>
-                    <li class="optionally__item">
-                        <input class="optionally__checkbox" type="checkbox" name="milk" id="milk">
-                        <label class="optionally__label label" for="milk">молоко</label>
+                    <li class="form-section__item">
+                        <input class="form-section__checkbox" type="checkbox" name="milk" id="milk">
+                        <label class="form-section__label" for="milk">молоко</label>
                     </li>
-                    <li class="optionally__item">
-                        <input class="optionally__checkbox" type="checkbox" name="vitamins" id="vitamins">
-                        <label class="optionally__label label" for="vitamins">витамины</label>
+                    <li class="form-section__item">
+                        <input class="form-section__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                        <label class="form-section__label" for="vitamins">витамины</label>
                     </li>
                 </ul>
             </fieldset>
             <button class="form__button button" type="submit"> Отправить заявку</button>
-        </form>
 
-        <div class="explanation">
-            <p class="explanation_text">*—Обязательное поле</p>
-        </div>
+            <div class="explanation">
+                <p class="explanation_text">*—Обязательное поле</p>
+            </div>
+
+        </form>
 
         <section class="contact">
             <div class="contact__wrap">
@@ -131,7 +132,7 @@
     </main>
     <footer class="page-footer">
         <div class="page-footer__logo-wrap">
-            <a class="page-footer__logo">
+            <a class="page-footer__logo" href="index.html">
                 <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
             </a>
         </div>
