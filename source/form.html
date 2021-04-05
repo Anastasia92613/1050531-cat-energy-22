@@ -41,15 +41,15 @@
             <fieldset class="form-section">
                 <legend class="visually-hidden">Данные кота</legend>
                 <ul class="form-section__list">
-                    <li class="form-section__item">
+                    <li class="form-section__item field">
                         <label class="field__label" for="name">Имя:*</label>
                         <input class="field__input" id="name" type="text" name="name" placeholder="Барсик">
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item field">
                         <label class="field__label" for="">Вес (кг):*</label>
                         <input class="field__input" id="weight" type="text" name="weight" placeholder="7">
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item field">
                         <label class="field__label" for="age">Возраст (лет):*</label>
                         <input class="field__input" id="age" type="text" name="age" placeholder="Барсик">
                     </li>
@@ -59,15 +59,15 @@
             <fieldset class="form-section">
                 <legend class="visually-hidden">Цель программы</legend>
                 <ul class="form-section__list">
-                    <li class="form-section__item">
+                    <li class="form-section__item radio">
                         <input class="radio__input" type="radio" name="slim" id="slim" checked>
                         <label class="radio__label" for="slim">Похудение</label>
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item radio">
                         <input class="radio__input" type="radio" name="weight" id="weight">
                         <label class="radio__label" for="weight">Набор массы</label>
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item radio">
                         <input class="radio__input" type="radio" name="advice" id="advice">
                         <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
                     </li>
@@ -77,18 +77,18 @@
             <fieldset class="form-section">
                 <legend class="form-section__title">Контактные данные (владельца кота)</legend>
                 <ul class="form-section__list">
-                    <li class="form-section__item">
+                    <li class="form-section__item field">
                         <label class="field__label" for="mail">E-mail:*</label>
                         <input class="field__input" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com">
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item field">
                         <label class="field__label" for="phone">Телефон:*</label>
                         <input class="field__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
                     </li>
                 </ul>
             </fieldset>
 
-            <fieldset class="form-section">
+            <fieldset class="form-section field">
                 <label class="form-section__title">Комментарий</label>
                 <textarea class="field__input" name="message" id="message" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
             </fieldset>
@@ -96,26 +96,26 @@
             <fieldset class="form-section">
                 <legend class="form-section__title">Дополнительно</legend>
                 <ul class="form-section__list">
-                    <li class="form-section__item">
+                    <li class="form-section__item checkbox">
                         <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
-                        <label class="field__label" for="sweetener">сахарозаменитель</label>
+                        <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item checkbox">
                         <input class="checkbox__input" type="checkbox" name="water" id="water">
-                        <label class="field__label" for="water">питьевая вода</label>
+                        <label class="checkbox__label" for="water">питьевая вода</label>
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item checkbox">
                         <input class="checkbox__input" type="checkbox" name="milk" id="milk">
-                        <label class="field__label" for="milk">молоко</label>
+                        <label class="checkbox__label" for="milk">молоко</label>
                     </li>
-                    <li class="form-section__item">
+                    <li class="form-section__item checkbox">
                         <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins">
-                        <label class="field__label" for="vitamins">витамины</label>
+                        <label class="checkbox__label" for="vitamins">витамины</label>
                     </li>
                 </ul>
             </fieldset>
             <button class="form__button button" type="submit"> Отправить заявку</button>
-            <p class="form__text">*—Обязательное поле</p>
+            <p class="form__note">*—Обязательное поле</p>
         </form>
 
         <section class="contact">
