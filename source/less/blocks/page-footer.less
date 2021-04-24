@@ -1,7 +1,8 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: @light-gray;
+  row-gap: 22px;
   padding-top: 39px;
   padding-bottom: 32px;
 }
@@ -9,6 +10,7 @@
 .page-footer__logo-wrap {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .page-footer__logo {}
