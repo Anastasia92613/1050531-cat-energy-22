@@ -5,12 +5,23 @@
   row-gap: 22px;
   padding-top: 39px;
   padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-footer__logo-wrap {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__logo {}

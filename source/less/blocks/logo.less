@@ -1,5 +1,27 @@
-.logo {}
+.logo {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 95px;
+  }
+
+
+}
 
 .logo__icon {
   margin-right: 56px;
+  margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin-top: 53px;
+  }
+}
+
+.logo__text {
+  margin-top: 24px;
+  margin-bottom: 12px;
 }

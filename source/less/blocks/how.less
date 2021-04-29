@@ -3,7 +3,14 @@
 .how__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
+  font-family: @second-font;
+  font-style: normal;
+  font-weight: normal;
+
+  @media (min-width: @desctop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .how__list {
@@ -14,6 +21,22 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 37px;
+    text-align: left;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desctop-width) {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   column-gap: 94px;
+   margin-bottom: 0;
+  }
+
 }
 
 .how__item {
@@ -25,7 +48,37 @@
   padding-left: 80px;
   position: relative;
   color: @dark-gray;
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 137px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-right: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+  }
+
 }
+
+.how__item--no-br {
+
+  @media (min-width: @desctop-width) {
+    display: none;
+  }
+}
+
+.how__item--br{
+  display: none;
+
+  @media (min-width: @desctop-width) {
+    display: block;
+  }
+
+}
+
 
 .how__item--structure {
   //Начала делать вставку иконки слева, но пока мешает
