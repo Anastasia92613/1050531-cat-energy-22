@@ -1,4 +1,9 @@
-.main-nav {}
+.main-nav {
+
+  @media (min-width: @desctop-width){
+    padding-top: 69px;
+  }
+}
 
 .main-nav__toggle {}
 
@@ -13,19 +18,9 @@
     flex-direction: row;
   }
 
-  @media (min-width: @desctop-width){
-    background-image: linear-gradient(@moderate-green, @moderate-green), url(../img/intro-background.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    min-height: 694px;
-    min-width: 720px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-left: 132px;
-    padding-top: 69px;
-  }
 }
+
+
 
 .main-nav__item {
   font-family: @second-font;
