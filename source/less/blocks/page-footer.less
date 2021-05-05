@@ -31,10 +31,19 @@
   @media (min-width: @tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: @desktop-width){
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__logo {}
 
 .page-footer__social {}
 
-.page-footer__copyright {}
+.page-footer__copyright {
+
+  @media (min-width: @desktop-width){
+    justify-content: flex-end;
+  }
+}
