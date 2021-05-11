@@ -1,6 +1,19 @@
-.field {}
+.field {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
 
 .field__label {
+  margin: 0;
+  padding: 0;
   font-family: @second-font;
   font-style: normal;
   font-weight: normal;
@@ -8,17 +21,35 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-right: 13px;
+  flex-shrink: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
+
+
 .field__input {
+  margin: 0;
+  padding: 0;
   font-family: @second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: @basic-black;
-  padding: 16px 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  flex-grow: 1;
+  border: 1px solid @gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input::-webkit-input-placeholder{
