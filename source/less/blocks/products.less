@@ -1,6 +1,13 @@
-.products {}
+.products {
+  @media (min-width: @desktop-width){
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
 
 .products__title {
+  margin: 0;
+  padding: 0;
   font-family: @second-font;
   font-style: normal;
   font-weight: normal;
@@ -8,6 +15,13 @@
   line-height: 24px;
   padding-top: 25px;
   padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 8px;
+    padding-bottom: 80px;
+  }
 }
 
 .products__list {

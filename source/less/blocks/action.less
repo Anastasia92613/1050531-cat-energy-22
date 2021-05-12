@@ -1,0 +1,86 @@
+.action {
+  display: block;
+  position: relative;
+  background-image: url(../../img/gift-photo.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 186px;
+  padding-bottom: 43px;
+  padding-right: 58px;
+  padding-left: 61px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-right: 124px;
+    padding-left: 423px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 184px;
+    padding-bottom: 42px;
+    padding-right: 43px;
+    padding-left: 41px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+}
+
+.action__text {
+  margin: 0;
+  padding: 0;
+  font-family: @basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}
+
+.action__text--others {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.action__text--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.action__text::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/icon_gift.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 78px;
+  height: 80px;
+  top: 58px;
+
+  @media (min-width: @tablet-width) {
+    left: 78px;
+  }
+}

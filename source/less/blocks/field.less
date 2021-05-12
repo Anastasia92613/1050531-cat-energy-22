@@ -1,6 +1,5 @@
 .field {
   display: flex;
-  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     margin-right: 36px;
@@ -58,4 +57,13 @@
 
 .field__input::-moz-placeholder{
   color: @basic-black;
+}
+
+.field__input--textarea {
+  padding-left: 15px;
+  padding-right: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
