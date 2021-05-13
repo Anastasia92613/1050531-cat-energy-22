@@ -1,45 +1,11 @@
 .checkbox {
   margin-bottom: 10px;
   @media (min-width: @tablet-width) {
-    margin-bottom: s0;
+    margin-bottom: 0;
+
   }
 }
 
-.checkbox--sweetener {
-  @media (min-width: @tablet-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-}
-
-.checkbox--water {
-  @media (min-width: @tablet-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-}
-
-.checkbox--milk {
-  @media (min-width: @desktop-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-}
-
-.checkbox--vitamins {
-  @media (min-width: @desktop-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 4;
-    grid-column-end: 5;
-  }
-}
 
 .checkbox__input {}
 
@@ -51,4 +17,9 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

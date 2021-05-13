@@ -1,13 +1,18 @@
 .card {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
   padding-top: 19px;
   padding-bottom: 25px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
+    box-sizing: border-box;
   }
+
 }
 
 .card__title {
@@ -28,16 +33,20 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
+    margin: 0;
+    padding: 0;
     grid-row-start: 2;
     grid-row-end: 3;
     justify-self: center;
-    width: 101px;
     text-align: center;
+    width: 129px;
   }
 }
 
 .card__link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: @very-dark-gray;
 
@@ -58,7 +67,7 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: center;
@@ -73,18 +82,11 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     grid-row-start: 3;
     grid-row-end: 4;
-
-    padding-left: 36px;
-    padding-right: 36px;
   }
 
-  @media (min-width: @desktop-width) {
-    padding-left: 40px;
-    padding-right: 35px;
-  }
 }
 
 .card__item {
@@ -119,29 +121,6 @@
 
 }
 
-.card__wrap {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-
-  @media (min-width: @tablet-width) {
-    width: 248px;
-    margin: 0 auto;
-    padding-left: 39px;
-    padding-right: 37px;
-    padding-bottom: 40px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 168px;
-  }
-}
-
 .card__button {
   font-family: @second-font;
   font-style: normal;
@@ -150,21 +129,23 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 10px 109px;
-  width: 280px;
-  height: 40px;
   box-sizing: border-box;
-
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   align-self: center;
   justify-self: center;
 
   @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 4;
     padding: 10px 93px;
-    width: 248px;
-
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 53px;
-    width: 168px;
+    padding: 10px 93px;
   }
 }

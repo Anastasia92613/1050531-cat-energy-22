@@ -1,5 +1,6 @@
 .field {
   display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     margin-right: 36px;
@@ -39,9 +40,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 16px;
+  padding: 10px 13px;
+  box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid @gray;
 
@@ -60,10 +60,23 @@
 }
 
 .field__input--textarea {
-  padding-left: 15px;
-  padding-right: 12px;
+  resize: both;
+  width: 100%;
+  max-width: 300px;
+  min-width: 250px;
+  min-height: 100px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    min-height: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: 1220px;
+    min-width: 700px;
+    min-height: 100px;
   }
 }

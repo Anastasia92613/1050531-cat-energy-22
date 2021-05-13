@@ -14,9 +14,9 @@
 <body class="page__body">
     <header class="page-header container">
 
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo logo">
             <img class="logo__icon" src="img/logo-icon-mobile.svg" width="34" height="38" alt="">
-            <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
+            <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </a>
 
         <nav class="main-nav">
@@ -100,7 +100,7 @@
             <fieldset class="form-section form-section--comment field">
                 <div class="container">
                     <h2 class="form-section__title">Комментарий</h2>
-                    <textarea class="field__input field__input--textarea" name="message" id="message" cols="40" rows="10">Расскажите обо всех повадках кота</textarea>
+                    <textarea class="field__input field__input--textarea" name="message" id="message" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
             </fieldset>
 
@@ -108,19 +108,19 @@
                 <div class="container">
                     <h2 class="form-section__title form-section__title--margin-optionally">Дополнительно</h2>
                     <ul class="form-section__list form-section__list--optionally">
-                        <li class="form-section__item checkbox checkbox--sweetener">
+                        <li class="form-section__item checkbox">
                             <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
                             <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
                         </li>
-                        <li class="form-section__item checkbox checkbox--water">
+                        <li class="form-section__item checkbox">
                             <input class="checkbox__input" type="checkbox" name="water" id="water">
                             <label class="checkbox__label" for="water">питьевая вода</label>
                         </li>
-                        <li class="form-section__item checkbox checkbox--milk">
+                        <li class="form-section__item checkbox">
                             <input class="checkbox__input" type="checkbox" name="milk" id="milk">
                             <label class="checkbox__label" for="milk">молоко</label>
                         </li>
-                        <li class="form-section__item checkbox checkbox--vitamins">
+                        <li class="form-section__item checkbox">
                             <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins">
                             <label class="checkbox__label" for="vitamins">витамины</label>
                         </li>

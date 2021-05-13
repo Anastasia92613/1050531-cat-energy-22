@@ -1,10 +1,9 @@
 .example {
-  background-color: @very-light-gray;
   padding-top: 27px;
   padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    background-color: @basic-white;
     padding-top: 43px;
     padding-bottom: 64px;
   }
@@ -14,12 +13,31 @@
   }
 }
 
+.example::before {
+  content: "";
+  position: absolute;
+  background-color: @very-light-gray;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    height: 43%;
+    top: 57%;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 70%;
+    top: 30%;
+  }
+}
+
 .example__wrap {
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: auto;
-    // grid-template-rows: 1fr 1fr 1fr 2fr;
     row-gap: 54px;
     align-items: start;
   }
