@@ -102,16 +102,17 @@
     width: 245px;
 
     &::after {
-      left: 70%;
+      left: 71%;
+      top: 15px;
     }
     &:nth-child(1)::after {
       left: 70%;
     }
     &:nth-child(2)::after {
-      left: 73%;
+      left: 67%;
     }
     &:nth-child(3)::after {
-      left: 73%;
+      left: 62%;
     }
     &:nth-child(4)::after {
       left: 73%;
@@ -139,7 +140,7 @@
       content: '4';
       display: block;
       position: absolute;
-      left: 73%;
+      left: 80%;
       transform: translateX(-50%);
       font-size: 281px;
       color: @very-light-gray;
@@ -170,7 +171,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url(../img/icon-structure-tablet.svg);
-    top: 0;
     width: 80px;
     height: 80px;
   }
@@ -194,7 +194,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url(../img/icon-consistencie-tablet.svg);
-    top: 0;
     width: 80px;
     height: 80px;
   }
@@ -213,7 +212,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url(../img/icon-quantity-tablet.svg);
-    top: 0;
     width: 80px;
     height: 80px;
   }
@@ -232,8 +230,21 @@
 
   @media (min-width: @tablet-width) {
     background-image: url(../img/icon-when-tablet.svg);
-    top: 0;
     width: 80px;
     height: 80px;
   }
+}
+
+
+.how__item--position::before {
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 31px;
+  }
+
 }

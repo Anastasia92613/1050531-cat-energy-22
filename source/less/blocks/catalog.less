@@ -19,12 +19,16 @@
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
+    row-gap: 142px;
+    margin-bottom: 68px;
+    padding-top: 56px;
   }
 
   @media (min-width: @desktop-width) {
    grid-template-columns: repeat( 4, 245px);
-   row-gap: 63px;
    column-gap: 80px;
+   margin-bottom: 75px;
+   padding-top: 84px;
   }
 }
 
@@ -42,6 +46,9 @@
 
   @media (min-width: @tablet-width) {
     background-color: @light-gray;
+    &::before {
+      background-image: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
