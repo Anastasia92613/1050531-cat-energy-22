@@ -3,6 +3,8 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   column-gap: 125px;
+  border-bottom: 1px solid @gray;
+  border-top: 1px solid @gray;
 
   @media (min-width: @desktop-width) {
     column-gap: 0;
@@ -111,9 +113,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 109px;
+  padding: 10px;
   width: 280px;
   box-sizing: border-box;
+  text-align: center;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
@@ -126,7 +129,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
     width: 100%;
-    padding: 10px 310px;
     margin-bottom: 34px;
   }
 
@@ -135,7 +137,6 @@
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
-    padding: 10px 92px;
     margin-bottom: 0;
     margin-left: 38px;
     width: 244px;

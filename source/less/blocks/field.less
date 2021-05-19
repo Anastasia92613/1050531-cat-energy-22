@@ -26,6 +26,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 18px;
+
   }
 }
 
@@ -37,13 +39,31 @@
   font-family: @second-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 10px 13px;
+  padding: 10px;
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid @gray;
+
+  &:hover {
+    border: 1px solid @very-very-light-gray;
+  }
+
+  &:focus {
+    border: 1px solid @dark-gray;
+  }
+  &:focus svg {
+    color: @green;
+  }
+
+  &--error {
+    border: 1px solid @very-light-red;
+    color: @very-light-red;
+  }
+
+
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -59,24 +79,47 @@
   color: @basic-black;
 }
 
-.field__input--textarea {
-  resize: both;
-  width: 100%;
-  max-width: 300px;
-  min-width: 250px;
-  min-height: 100px;
+
+.field__input--email {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 14px;
+  right: 15px;
+
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    max-width: 800px;
-    min-width: 400px;
-    min-height: 100px;
+    right: 17px;
+  }
+}
+
+.field__input--phone {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  right: 13px;
+  @media (min-width: @tablet-width) {
+    right: 17px;
+  }
+}
+.field__input--textarea {
+  resize: both;
+  max-width: 280px;
+  min-height: 150px;
+  height: 150px;
+
+  @media (min-width: @tablet-width) {
+
+    max-width: 631px;
+    width: 631px;
+    min-height: 174px;
+    height: 174px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+
     max-width: 1220px;
-    min-width: 700px;
-    min-height: 100px;
+    min-height: 174px;
   }
 }

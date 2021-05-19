@@ -25,7 +25,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 37px;
+    row-gap: 87px;
     text-align: left;
     margin-bottom: 47px;
   }
@@ -48,18 +48,77 @@
   padding-left: 80px;
   position: relative;
   color: @dark-gray;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
   @media (min-width: @tablet-width) {
     padding-left: 0;
-    padding-right: 137px;
-    padding-top: 151px;
+    padding-right: 123px;
+    padding-top: 115px;
     padding-bottom: 57px;
+
+
+    &::after {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 53%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 281px;
+    color: @very-light-gray;
+    line-height: 230px;
+    z-index: -1;
+    font-family: @second-font;
+    }
+
+    &:nth-child(1)::after {
+      content: '1';
+      left: 53%;
+    }
+
+    &:nth-child(2)::after {
+      content: '2';
+      left: 53%;
+    }
+
+    &:nth-child(3)::after {
+      content: '3';
+      left: 53%;
+    }
+
+
+    &:nth-child(4)::after {
+      content: '4';
+      left: 53%;
+    }
+
   }
 
   @media (min-width: @desktop-width) {
     padding-right: 0;
     padding-top: 151px;
     padding-bottom: 57px;
+    width: 245px;
+
+    &::after {
+      left: 70%;
+    }
+    &:nth-child(1)::after {
+      left: 70%;
+    }
+    &:nth-child(2)::after {
+      left: 73%;
+    }
+    &:nth-child(3)::after {
+      left: 73%;
+    }
+    &:nth-child(4)::after {
+      left: 73%;
+    }
   }
+
+
 
 }
 
@@ -70,29 +129,111 @@
   }
 }
 
-.how__item--br{
+.how__item--br {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
+
+    &::after {
+      content: '4';
+      display: block;
+      position: absolute;
+      left: 73%;
+      transform: translateX(-50%);
+      font-size: 281px;
+      color: @very-light-gray;
+      line-height: 230px;
+      z-index: -1;
+      font-family: @second-font;
+      padding-right: 0;
+      padding-bottom: 57px;
+      width: 245px;
+
+    }
+
   }
 
 }
 
 
-.how__item--structure {
-  //Начала делать вставку иконки слева, но пока мешает
-// position: absolute;
-// content: "";
-// background-image: url(../img/icon-structure.svg);
-// background-repeat: no-repeat;
-// background-position: 0 0;
-// margin-right: 20px;
-// left: 0;
+.how__item--structure::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-structure.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/icon-structure-tablet.svg);
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+
 }
 
-.how__item--consistencie {}
 
-.how__item--quantity {}
 
-.how__item--when {}
+
+.how__item--consistencie::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-consistencie.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/icon-consistencie-tablet.svg);
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.how__item--quantity::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-quantity.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/icon-quantity-tablet.svg);
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.how__item--when::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-when.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/icon-when-tablet.svg);
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
