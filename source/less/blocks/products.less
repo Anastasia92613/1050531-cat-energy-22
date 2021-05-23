@@ -1,17 +1,13 @@
-.products {}
-
-.products__title {
-  font-family: @second-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  padding-top: 25px;
-  padding-bottom: 36px;
+.products {
+  @media (min-width: @desktop-width){
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .products__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 39px;
 }

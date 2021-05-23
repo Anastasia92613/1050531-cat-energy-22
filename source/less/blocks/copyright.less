@@ -1,6 +1,8 @@
 .copyright {}
 
 .copyright__link {
+  margin: 0;
+  padding: 0;
   font-family: @basic-font;
   font-style: normal;
   font-weight: normal;
@@ -8,5 +10,25 @@
   line-height: 18px;
   text-decoration: none;
   color: @dark-gray;
-  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.copyright__svg {
+  width: 27px;
+  height: 24px;
+  &:hover {
+    color: @green;
+  }
+  &:active {
+    fill: @green;
+    opacity: 0.3;
+  }
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+  }
 }

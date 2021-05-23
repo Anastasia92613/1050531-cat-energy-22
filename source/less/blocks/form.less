@@ -1,21 +1,64 @@
 .form {}
 
+.form__grid {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 80px;
+    margin-bottom: 65px;
+  }
+}
+
+.form__wrap {
+  margin-bottom: 32px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
 .form__button {
   border: none;
-  padding: 7px 44px;
-  margin-bottom: 21px;
   font-family: @second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  padding: 10px;
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 45px;
+    margin-right: 61px;
+    width: auto;
+    margin-bottom: 0;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 14px 188px;
+    margin-right: 81px;
+  }
 }
 
 .form__note {
+  margin: 0;
+  padding: 0;
   font-family: @basic-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
 }
