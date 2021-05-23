@@ -144,38 +144,38 @@
   }
 }
 
-.example__fact::before {
- position: absolute;
- content: "";
- background-image: url(../../img/weight-back.png);
- background-repeat: no-repeat;
- background-position: 0 0;
- width: 124px;
- height: 56px;
- top: -12px;
- left: 0;
+// .example__fact::before {
+//  position: absolute;
+//  content: "";
+//  background-image: url(../../img/weight-back.png);
+//  background-repeat: no-repeat;
+//  background-position: 0 0;
+//  width: 124px;
+//  height: 56px;
+//  top: -12px;
+//  left: 0;
 
- @media (min-width: @tablet-width) {
-  background-image: url(../../img/weight-back-tablet.png);
-  width: 162px;
-  height: 72px;
-  top: -15px;
- }
-}
+//  @media (min-width: @tablet-width) {
+//   background-image: url(../../img/weight-back-tablet.png);
+//   width: 162px;
+//   height: 72px;
+//   top: -15px;
+//  }
+// }
 
-.example__fact--border::before{
+// .example__fact--border::before{
 
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    background-image: url(../../img/weight-back-tablet-border.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 162px;
-    height: 72px;
-    top: -15px;
-  }
-}
+//   @media (min-width: @tablet-width) {
+//     position: absolute;
+//     content: "";
+//     background-image: url(../../img/weight-back-tablet-border.png);
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//     width: 162px;
+//     height: 72px;
+//     top: -15px;
+//   }
+// }
 
 
 
@@ -187,8 +187,17 @@
   text-transform: uppercase;
   margin-bottom: 11px;
   text-align: center;
+  border: 1px solid @gray;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 3px;
+  min-width: 84px;
 
   @media (min-width: @tablet-width) {
+    min-width: 102px;
+    padding: 15px 30px 20px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -204,12 +213,22 @@
   line-height: 12px;
   color: @dark-gray;
   width: 60px;
+  background-color: @very-light-gray;
+  margin-top: -21px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
     min-width: 130px;
+    background-color: @basic-white;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
+  @media (min-width: @desktop-width) {
+    background-color: @very-light-gray;
   }
 }
 

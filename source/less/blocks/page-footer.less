@@ -12,7 +12,6 @@
 
 .page-footer__wrap {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   row-gap: 22px;
 
 
@@ -30,6 +29,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width){
@@ -43,7 +43,17 @@
   }
 }
 
-.page-footer__social {}
+.page-footer__social {
+  border-top: 1px solid @light-light-gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @light-light-gray;
+
+  @media (min-width: @tablet-width){
+    padding: 0;
+    border: none;
+  }
+}
 
 .page-footer__copyright {
 
