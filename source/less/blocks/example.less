@@ -7,7 +7,7 @@
     padding-bottom: 64px;
   }
   @media (min-width: @desktop-width) {
-    padding-top: 79px;
+    padding-top: 2px;
     padding-bottom: 75px;
   }
 }
@@ -62,11 +62,12 @@
     margin-bottom: 0;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 146px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-top: 65px;
+    margin-bottom: 97px;
   }
 }
 
@@ -96,6 +97,7 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-bottom: 16px;
   }
 }
 
@@ -218,13 +220,11 @@
     margin-bottom: 0;
     min-width: 180px;
   }
-}
-
-.example__money:first-child {
   @media (min-width: @desktop-width) {
-    margin-right: 63px;
+    min-width: 153px;
   }
 }
+
 
 .example__grid {
   @media (min-width: @desktop-width) {
@@ -233,6 +233,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     justify-self: center;
+    height: 566px;
   }
 }
 
@@ -298,7 +299,10 @@
     border-radius: 50%;
     box-shadow: 1px @gray;
   }
-
+  @media (min-width: @desktop-width) {
+    top: -5px;
+    left: 54%;
+  }
 }
 
 .example__buttons {
@@ -315,6 +319,7 @@
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
+    padding-left: 73px;
   }
 
 }
