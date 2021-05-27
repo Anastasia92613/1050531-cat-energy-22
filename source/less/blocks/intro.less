@@ -34,6 +34,7 @@
   content: "";
   display: block;
   width: 100%;
+  height: 302px;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -58,12 +59,13 @@
     position: absolute;
     top: -100px;
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     content: "";
     width: 50%;
     position: absolute;
     top: -200px;
     bottom: 0;
+    min-height: 779px;
     right: 0;
     background-image: linear-gradient(@moderate-green, @moderate-green), url(../img/index-background-desktop.png);
     background-repeat: no-repeat;
@@ -76,8 +78,6 @@
     }
   }
 }
-
-
 
 .intro__title {
   margin: 0;
@@ -132,10 +132,11 @@
   height: 270px;
   top: 410px;
   z-index: 3;
+  margin-bottom: 5px;
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 266px;
-    right: 0;
+    right: 32px;
     min-height: 609px;
     min-width: 709px;
     z-index: -1;
@@ -144,7 +145,7 @@
     min-height: 497px;
     min-width: 544px;
     top: 27px;
-    left: 487px;
+    left: 480px;
   }
 }
 
@@ -162,11 +163,16 @@
     margin: 0;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px;
-    width: 244px;
+    padding: 17px;
+    width: 242px;
     height: 54px;
     box-sizing: border-box;
     z-index: 1;
+    margin-left: -5px;
     align-self: flex-start;
+  }
+  @media (min-width: @desktop-width){
+    width: 247px;
+    margin: 0;
   }
 }

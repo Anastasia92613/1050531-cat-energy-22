@@ -1,4 +1,8 @@
 .programs {
+  margin-bottom: 29px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
   @media (min-width: @desktop-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,7 +17,13 @@
   margin-bottom: 20px;
   position: relative;
   @media (min-width: @tablet-width) {
-    padding: 77px 53px 52px;
+    padding: 80px 53px 54px;
+    margin-bottom: 0;
+  }
+}
+
+.programs__wrap--slim {
+  @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
 }
@@ -49,14 +59,14 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  top: 21px;
+  top: 25px;
   left: 13px;
   @media (min-width: @tablet-width) {
     background-image: url(../img/cat-weight-tablet.svg);
     width: 268px;
     height: 200px;
-    top: 91px;
-    left: 719px;
+    top: 94px;
+    left: 412px;
   }
   @media (min-width: @desktop-width) {
     background-image: url(../img/cat-weight-desctop.svg);
@@ -77,7 +87,7 @@
   line-height: 37px;
   text-transform: uppercase;
   margin-left: 71px;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 24px;
@@ -107,7 +117,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-right: 230px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
   @media (min-width: @desktop-width){
     padding-right: 0;
@@ -133,7 +143,7 @@
   text-transform: uppercase;
   color: @basic-black;
   padding-right: 15px;
-  padding-top: 15px;
+  padding-top: 19px;
   display: flex;
   align-items: center;
   @media (min-width: @tablet-width) {
@@ -146,15 +156,19 @@
 .programs__link p {
   margin: 0;
   padding: 0;
+  margin-right: 8px;
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
   @media (min-width: @desktop-width){
-    padding-right: 21px;
+    padding-right: 5px;
   }
 }
 
 .programs__link svg {
   fill: currentColor;
-  width: 32px;
-  height: 10px;
+  width: 39px;
+  height: 12px;
 }
 
 .programs__link:hover {

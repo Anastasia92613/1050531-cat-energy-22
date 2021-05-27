@@ -1,10 +1,11 @@
 .catalog {
   @media (min-width: @tablet-width) {
     padding-top: 17px;
+    margin-bottom: 68px;
   }
   @media (min-width: @desktop-width) {
     padding-top: 10px;
-
+    margin-bottom: 68px;
   }
 }
 
@@ -14,16 +15,17 @@
   padding: 0;
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 324px);
     gap: 60px;
     row-gap: 142px;
-    margin-bottom: 68px;
     padding-top: 56px;
+    margin: 0 auto;
+    max-width: 707px;
   }
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat( 4, 245px);
+    margin: 0;
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    margin-bottom: 68px;
     padding-top: 84px;
   }
 }

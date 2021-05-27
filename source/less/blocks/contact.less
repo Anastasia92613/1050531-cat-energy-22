@@ -15,6 +15,10 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 28px;
   padding-bottom: 26px;
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 57px;
+  }
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: flex-start;
@@ -31,15 +35,18 @@
 .contact__title {
   margin: 0;
   padding: 0;
+  font-family: @second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     width: 171px;
+    padding-left: 40px;
+    padding-top: 2px;
   }
   @media (min-width: @desktop-width) {
     margin-right: 98px;
@@ -49,6 +56,8 @@
 .contact__descr-wrap{
   @media (min-width: @tablet-width) {
     justify-self: self-end;
+    text-align: right;
+    padding-right: 42px;
   }
 }
 
