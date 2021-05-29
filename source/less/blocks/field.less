@@ -82,12 +82,8 @@
   &:focus {
     border: 1px solid @dark-gray;
   }
-  &:focus svg {
-    color: @green;
-  }
   &--error {
     border: 1px solid @very-light-red;
-    color: @very-light-red;
   }
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -97,6 +93,18 @@
   @media (min-width: @desktop-width) {
     padding-left: 17px;
   }
+}
+
+.field__input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.field__input:focus + .field__input-email {
+  color: @green;
+}
+
+.field__input--error + .field__input-email {
+  color: @very-light-red;
 }
 
 .field__input--name {
