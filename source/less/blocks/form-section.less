@@ -5,7 +5,7 @@
 }
 
 .form-section--cat {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
   }
@@ -19,9 +19,9 @@
 }
 
 .form-section--programm {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 26px;
+  padding-top: 23px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
   position: relative;
   &::before {
     position: absolute;
@@ -46,9 +46,11 @@
     border-style: solid;
     border-width: 1px;
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     padding-left: 28px;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
+    margin-left: 41px;
+    margin-right: 38px;
     &::before {
       display: none;
     }
@@ -65,7 +67,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: -1;
-    margin-bottom: 0px;
+    margin: 0;
   }
 }
 
@@ -85,14 +87,17 @@
     margin-bottom: 65px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 }
 
 .form-section--optionally {
   margin-bottom: 34px;
   @media (min-width: @tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -105,11 +110,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    padding-left: 39px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -127,10 +136,10 @@
   @media (min-width: @tablet-width) {
     &::after{
       background-image: url(../img/title-line-owner-tablet.svg);
-      width: 145px;
+      width: 177px;
       height: 3px;
-      top: 16px;
-      right: -30px;
+      top: 23px;
+      right: -65px;
     }
     &::before {
       position: absolute;
@@ -138,7 +147,7 @@
       background-image: url(../img/title-line-owner-tablet.svg);
       width: 30px;
       height: 3px;
-      top: 16px;
+      top: 23px;
       left: -30px;
     }
   }
@@ -177,10 +186,10 @@
   @media (min-width: @tablet-width) {
     &::after{
       background-image: url(../img/title-line-comment-tablet.svg);
-      width: 478px;
+      width: 512px;
       height: 3px;
-      top: 16px;
-      right: -65px;
+      top: 21px;
+      right: -99px;
     }
     &::before {
       position: absolute;
@@ -188,7 +197,7 @@
       background-image: url(../img/title-line-owner-tablet.svg);
       width: 30px;
       height: 3px;
-      top: 16px;
+      top: 20px;
       left: -30px;
     }
   }
@@ -198,7 +207,7 @@
       background-image: url(../img/title-line-comment-desctop-r.svg);
       width: 1108px;
       height: 3px;
-      top: 22px;
+      top: 20px;
       right: -109px;
     }
     &::before {
@@ -207,7 +216,7 @@
       background-image: url(../img/title-line-owner-tablet-l.svg);
       width: 70px;
       height: 3px;
-      top: 24px;
+      top: 20px;
       left: -112px;
     }
   }
@@ -221,16 +230,17 @@
     background-image: url(../img/title-line-comment-mobile.svg);
     width: 136px;
     height: 3px;
-    top: 16px;
+    top: 13px;
     right: -20px;
   }
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
     &::after{
       background-image: url(../img/title-line-comment-tablet.svg);
-      width: 446px;
+      width: 481px;
       height: 3px;
-      top: 16px;
+      top: 19px;
       right: -65px;
     }
     &::before {
@@ -239,7 +249,7 @@
       background-image: url(../img/title-line-owner-tablet.svg);
       width: 30px;
       height: 3px;
-      top: 16px;
+      top: 19px;
       left: -30px;
     }
   }
@@ -269,7 +279,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  row-gap: 14px;
+  row-gap: 19px;
   @media (min-width: @tablet-width) {
     row-gap: 20px;
   }
@@ -284,16 +294,18 @@
 
 .form-section__list--optionally {
   display: grid;
-  row-gap: 12px;
+  row-gap: 14px;
   @media (min-width: @tablet-width) {
     grid-template-columns:  300px 300px;
-    row-gap: 32px;
+    row-gap: 43px;
     column-gap: 43px;
+    margin-left: 40px;
   }
   @media (min-width: @desktop-width) {
-    grid-template-columns:  repeat(auto-fill, 280px);
+    grid-template-columns:  repeat(auto-fill, 240px);
     grid-template-rows: 1fr;
-    column-gap: 25px;
+    column-gap: 84px;
+    margin-left: 0;
   }
 }
 

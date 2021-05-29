@@ -30,12 +30,11 @@
   @media (min-width: @desktop-width){
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-top: 184px;
-    padding-bottom: 42px;
-    padding-right: 43px;
-    padding-left: 41px;
-    margin-bottom: 42зч;
+    padding: 0;
+    margin-bottom: 0;
     background-image: url(../img/gift-photo-desktop.png);
+    width: 245px;
+    height: 289px;
     @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.png");
@@ -53,11 +52,16 @@
   line-height: 20px;
   text-align: center;
   color: @basic-white;
+  padding-top: 1px;
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: left;
   }
-
+  @media (min-width: @desktop-width){
+    padding-top: 186px;
+    text-align: center;
+  }
 }
 
 .action__text::before {
@@ -69,7 +73,11 @@
   width: 78px;
   height: 80px;
   top: 58px;
+  left: 101px;
   @media (min-width: @tablet-width) {
     left: 78px;
+  }
+  @media (min-width: @desktop-width){
+    left: 86px;
   }
 }

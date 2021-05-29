@@ -1,9 +1,9 @@
 .page-head {
   padding-top: 27px;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    margin-bottom: 66px;
+    padding-top: 64px;
+    margin-bottom: 63px;
   }
   @media (min-width: @desktop-width) {
     padding-top: 73px;
@@ -29,6 +29,15 @@
   }
 }
 
+.page-head__title--form {
+  @media (min-width: @tablet-width) {
+    padding-left: 39px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
 .page-head__text {
   margin: 0;
   padding: 0;
@@ -42,9 +51,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 385px;
+    padding-right: 345px;
+    padding-left: 39px;
   }
   @media (min-width: @desktop-width) {
     padding-right: 831px;
+    padding-left: 0;
   }
 }

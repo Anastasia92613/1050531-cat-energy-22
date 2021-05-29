@@ -3,12 +3,14 @@
   padding-bottom: 36px;
   position: relative;
   @media (min-width: @tablet-width) {
-    padding-top: 27px;
+    padding-top: 28px;
     padding-bottom: 0;
+    min-height: 1078px;
   }
   @media (min-width: @desktop-width) {
     padding-top: 2px;
     padding-bottom: 58px;
+    min-height: auto;
   }
 }
 
@@ -21,12 +23,12 @@
   width: 100%;
   z-index: -1;
   @media (min-width: @tablet-width) {
-    height: 41%;
-    top: 54%;
+    height: 42%;
+    top: 55%;
   }
 
   @media (min-width: @desktop-width) {
-    height: 83%;
+    height: 72%;
     top: 31%;
   }
 }
@@ -37,6 +39,7 @@
     grid-template-columns: 366px 2fr;
     row-gap: 54px;
     align-items: start;
+    position: relative;
   }
   @media (min-width: @desktop-width) {
     grid-template-columns: 436px 650px;
@@ -173,6 +176,7 @@
     font-size: 14px;
     line-height: 14px;
     min-width: 130px;
+    margin-top: -19px;
     background-color: @basic-white;
     padding-left: 3px;
     padding-right: 3px;
@@ -251,18 +255,25 @@
   width: 311px;
   height: 232px;
   @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
     width: 708px;
-    height: 627px;
-    margin: 0;
+    height: 667px;
+    margin-top: 24px;
+    margin-left: 14px;
+    top: 381px;
+    left: 27px;
   }
   @media (min-width: @desktop-width) {
     min-width: 690px;
-    min-height: 536px;
+    min-height: 667px;
     margin-bottom: 16px;
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
+    top: -20px;
+    left: -19px;
   }
 }
 
@@ -281,6 +292,11 @@
     width: 428px;
     height: 6px;
     background-color: @gray;
+    margin-left: 27px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -319,7 +335,7 @@
     grid-column-start: 1;
     grid-column-end: -1;
     position: absolute;
-    bottom: 123px;
+    bottom: -504px;
     left: -1px;
     position: relative;
     align-items: center;
@@ -329,7 +345,7 @@
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-left: 73px;
+    padding-left: 79px;
     bottom: 2px;
     left: -1px;
   }
@@ -344,5 +360,17 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted @l-gray;
+  }
+}
+
+.example__button--was {
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
+  }
+}
+
+.example__button--become {
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
   }
 }

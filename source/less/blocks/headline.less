@@ -25,6 +25,7 @@
     line-height: 36px;
     padding-top: 0;
     padding-bottom: 80px;
+    padding-left: 36px;
     &::after {
       position: absolute;
       content: "";
@@ -32,8 +33,8 @@
       background-repeat: no-repeat;
       width: 328px;
       height: 3px;
-      top: 31px;
-      right: -20px;
+      top: 20px;
+      right: -30px;
     }
     &::before {
       position: absolute;
@@ -42,12 +43,13 @@
       background-repeat: no-repeat;
       width: 30px;
       height: 3px;
-      top: 31px;
-      left: -66px;
+      top: 20px;
+      left: -31px;
     }
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 0;
     &::after {
       position: absolute;
       content: "";
@@ -56,7 +58,7 @@
       width: 957px;
       height: 3px;
       top: 23px;
-      right: -130px;
+      right: -111px;
     }
     &::before {
       position: absolute;
@@ -66,7 +68,8 @@
       width: 70px;
       height: 3px;
       top: 23px;
-      left: -148px;
+      left: -110px;
+
     }
   }
 }

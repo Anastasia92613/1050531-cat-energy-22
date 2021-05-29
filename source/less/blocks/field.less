@@ -18,16 +18,49 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-right: 13px;
   flex-shrink: 1;
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 18px;
+    padding-left: 40px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
+.field__label--name {
+  padding-right: 13px;
+  @media (min-width: @tablet-width) {
+    padding-right: 16px;
+  }
+}
 
+.field__label--weight {
+  padding-right: 15px;
+  @media (min-width: @tablet-width) {
+    padding-right: 21px;
+  }
+}
+
+.field__label--age {
+  padding-right: 10px;
+}
+
+.field__label--mail {
+  padding-right: 10px;
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+}
+
+.field__label--phone {
+  padding-right: 10px;
+  @media (min-width: @tablet-width) {
+    padding-right: 14px;
+  }
+}
 
 .field__input {
   margin: 0;
@@ -36,10 +69,10 @@
   color: @dark-gray;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 11px 11px 15px;
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid @gray;
@@ -59,9 +92,37 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 10px 11px 19px;
   }
   @media (min-width: @desktop-width) {
     padding-left: 17px;
+  }
+}
+
+.field__input--name {
+  @media (min-width: @desktop-width) {
+    max-width: 506px;
+  }
+}
+.field__input--weight {
+  @media (min-width: @desktop-width) {
+    max-width: 475px;
+  }
+}
+.field__input--age {
+  @media (min-width: @desktop-width) {
+    max-width: 436px;
+  }
+}
+.field__input--mail {
+  @media (min-width: @desktop-width) {
+    width: 486px;
+  }
+}
+
+.field__input--phone {
+  @media (min-width: @desktop-width) {
+    width: 472px;
   }
 }
 
@@ -97,7 +158,7 @@
 }
 .field__input--textarea {
   resize: both;
-  max-width: 280px;
+  width: 280px;
   min-height: 150px;
   height: 150px;
   @media (min-width: @tablet-width) {
@@ -105,10 +166,12 @@
     width: 631px;
     min-height: 174px;
     height: 174px;
+    margin-left: 39px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
     min-height: 174px;
+    margin-left: 0;
   }
 }

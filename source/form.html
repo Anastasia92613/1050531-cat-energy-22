@@ -29,7 +29,7 @@
         <nav class="main-nav">
             <!-- Для JS main-nav__toggle -->
             <button class="main-nav__toggle main-nav__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <!-- Для того, чтобы закрыть меню main-nav__list--close-->
+            <!-- Для того, чтобы закрыть меню main-nav__list--close -->
             <ul class="main-nav__list">
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="index.html">Главная</a>
@@ -47,7 +47,7 @@
     <main class="page-main">
 
         <section class="page-head container">
-            <h1 class="page-head__title">Подбор программы</h1>
+            <h1 class="page-head__title page-head__title--form">Подбор программы</h1>
             <p class="page-head__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </section>
 
@@ -57,23 +57,23 @@
                     <h2 class="visually-hidden">Данные кота</h2>
                     <ul class="form-section__list">
                         <li class="form-section__item field">
-                            <label class="field__label" for="name">Имя:*</label>
-                            <input class="field__input" id="name" type="text" name="name" placeholder="Барсик">
+                            <label class="field__label field__label--name" for="name">Имя:*</label>
+                            <input class="field__input field__input--name" id="name" type="text" name="name" placeholder="Барсик">
                         </li>
                         <li class="form-section__item field">
-                            <label class="field__label" for="weight">Вес (кг):*</label>
-                            <input class="field__input" id="weight" type="text" name="weight" placeholder="7">
+                            <label class="field__label field__label--weight" for="weight">Вес (кг):*</label>
+                            <input class="field__input field__input--weight" id="weight" type="text" name="weight" placeholder="7">
                         </li>
                         <li class="form-section__item field">
-                            <label class="field__label" for="age">Возраст (лет):*</label>
-                            <input class="field__input" id="age" type="text" name="age" placeholder="7">
+                            <label class="field__label field__label--age" for="age">Возраст (лет):*</label>
+                            <input class="field__input field__input--age" id="age" type="text" name="age" placeholder="7">
                         </li>
                     </ul>
                 </fieldset>
 
                 <fieldset class="form-section form-section--programm">
                     <h2 class="visually-hidden">Цель программы</h2>
-                    <ul class="form-section__list">
+                    <ul class="form-section__list radio-grid">
                         <li class="form-section__item radio">
                             <input class="visually-hidden radio__input" type="radio" name="programm" id="slim" checked>
                             <label class="radio__label" for="slim">Похудение</label>
@@ -95,15 +95,15 @@
                     <h2 class="form-section__title form-section__title--owner">Контактные данные (владельца кота)</h2>
                     <ul class="form-section__list form-section__list--owner">
                         <li class="form-section__item form-section__item--mail field">
-                            <label class="field__label" for="mail">E-mail:*</label>
-                            <input class="field__input" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
+                            <label class="field__label field__label--mail" for="mail">E-mail:*</label>
+                            <input class="field__input field__input--mail" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
                             <svg class="field__input-email" width="28" height="22">
                 <use href="img/sprite.svg#email"></use>
               </svg>
                         </li>
                         <li class="form-section__item form-section__item--phone field">
-                            <label class="field__label" for="phone">Телефон:*</label>
-                            <input class="field__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                            <label class="field__label field__label--phone" for="phone">Телефон:*</label>
+                            <input class="field__input field__input--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
                             <svg class="field__input-phone" width="28" height="22">
                 <use href="img/sprite.svg#phone"></use>
               </svg>
@@ -144,7 +144,7 @@
             </fieldset>
             <div class="form__wrap container">
                 <button class="form__button button" type="submit"> Отправить заявку</button>
-                <p class="form__note">*—Обязательное поле</p>
+                <p class="form__note">* — Обязательное поле</p>
             </div>
         </form>
 
