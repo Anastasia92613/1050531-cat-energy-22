@@ -7,9 +7,12 @@
   margin: 0;
   padding: 0;
   position: relative;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     margin-left: 48px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 134px;
   }
@@ -17,18 +20,25 @@
 
 .social__item {
   margin-right: 38px;
+
   @media (min-width: @tablet-width) {
     margin-right: 28px;
   }
 }
-.social__item:last-child{
+
+.social__item:last-child {
   margin-right: 0;
+}
+
+.social__link {
+  display: block;
 }
 
 .social__link-vk {
   width: 22px;
   height: 16px;
   color: @very-very-dark-gray;
+
   &:hover {
     color: @green;
   }
@@ -37,6 +47,7 @@
     color: @green;
     opacity: 0.3;
   }
+
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
@@ -47,13 +58,16 @@
   width: 16px;
   height: 16px;
   color: @very-very-dark-gray;
+
   &:hover {
     color: @green;
   }
+
   &:active {
     color: @green;
     opacity: 0.3;
   }
+
   @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
@@ -64,13 +78,16 @@
   width: 10px;
   height: 18px;
   color: @very-very-dark-gray;
+
   &:hover {
     color: @green;
   }
+
   &:active {
     color: @green;
     opacity: 0.3;
   }
+
   @media (min-width: @tablet-width) {
     width: 13px;
     height: 27px;

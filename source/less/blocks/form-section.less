@@ -6,9 +6,11 @@
 
 .form-section--cat {
   margin-bottom: 24px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
   }
+
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -23,6 +25,7 @@
   padding-bottom: 25px;
   margin-bottom: 25px;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -32,6 +35,7 @@
     top: 0;
     left: -20px;
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -41,6 +45,7 @@
     bottom: 0;
     left: -20px;
   }
+
   @media (min-width: @tablet-width) {
     border-color: @gray;
     border-style: solid;
@@ -51,9 +56,11 @@
     margin-bottom: 74px;
     margin-left: 41px;
     margin-right: 38px;
+
     &::before {
       display: none;
     }
+
     &::after {
       display: none;
     }
@@ -73,9 +80,11 @@
 
 .form-section--owner {
   margin-bottom: 24px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 69px;
   }
@@ -83,9 +92,11 @@
 
 .form-section--comment {
   margin-bottom: 23px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 64px;
   }
@@ -93,9 +104,11 @@
 
 .form-section--optionally {
   margin-bottom: 34px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 56px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
   }
@@ -111,12 +124,14 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 38px;
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
     padding-left: 39px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 0;
   }
@@ -124,6 +139,7 @@
 
 .form-section__title--owner {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -133,14 +149,16 @@
     top: 16px;
     right: -20px;
   }
+
   @media (min-width: @tablet-width) {
-    &::after{
+    &::after {
       background-image: url(../img/title-line-owner-tablet.svg);
       width: 177px;
       height: 3px;
       top: 23px;
       right: -65px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -151,14 +169,16 @@
       left: -30px;
     }
   }
+
   @media (min-width: @desktop-width) {
-    &::after{
+    &::after {
       background-image: url(../img/title-line-owner-desctop-r.svg);
       width: 778px;
       height: 3px;
       top: 23px;
       right: -111px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -173,6 +193,7 @@
 
 .form-section__title--comment {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -184,13 +205,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    &::after{
+    &::after {
       background-image: url(../img/title-line-comment-tablet.svg);
       width: 512px;
       height: 3px;
       top: 21px;
       right: -99px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -203,13 +225,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    &::after{
+    &::after {
       background-image: url(../img/title-line-comment-desctop-r.svg);
       width: 1108px;
       height: 3px;
       top: 20px;
       right: -109px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -224,6 +247,7 @@
 
 .form-section__title--optionally {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -236,13 +260,15 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 60px;
-    &::after{
+
+    &::after {
       background-image: url(../img/title-line-comment-tablet.svg);
       width: 481px;
       height: 3px;
       top: 19px;
       right: -65px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -255,13 +281,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    &::after{
+    &::after {
       background-image: url(../img/title-line-comment-desctop-r.svg);
       width: 1078px;
       height: 3px;
       top: 21px;
       right: -108px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -280,6 +307,7 @@
   list-style: none;
   display: grid;
   row-gap: 19px;
+
   @media (min-width: @tablet-width) {
     row-gap: 20px;
   }
@@ -295,14 +323,16 @@
 .form-section__list--optionally {
   display: grid;
   row-gap: 14px;
+
   @media (min-width: @tablet-width) {
-    grid-template-columns:  300px 300px;
+    grid-template-columns: 300px 300px;
     row-gap: 43px;
     column-gap: 43px;
     margin-left: 40px;
   }
+
   @media (min-width: @desktop-width) {
-    grid-template-columns:  repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, 240px);
     grid-template-rows: 1fr;
     column-gap: 84px;
     margin-left: 0;

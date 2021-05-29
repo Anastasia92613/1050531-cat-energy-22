@@ -1,9 +1,11 @@
 .field {
   display: flex;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     margin-right: 36px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
@@ -19,12 +21,14 @@
   line-height: 18px;
   text-transform: uppercase;
   flex-shrink: 1;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 18px;
     padding-left: 40px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 0;
   }
@@ -32,6 +36,7 @@
 
 .field__label--name {
   padding-right: 13px;
+
   @media (min-width: @tablet-width) {
     padding-right: 16px;
   }
@@ -39,6 +44,7 @@
 
 .field__label--weight {
   padding-right: 15px;
+
   @media (min-width: @tablet-width) {
     padding-right: 21px;
   }
@@ -50,6 +56,7 @@
 
 .field__label--mail {
   padding-right: 10px;
+
   @media (min-width: @tablet-width) {
     padding-right: 20px;
   }
@@ -57,6 +64,7 @@
 
 .field__label--phone {
   padding-right: 10px;
+
   @media (min-width: @tablet-width) {
     padding-right: 14px;
   }
@@ -76,20 +84,25 @@
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid @gray;
+
   &:hover {
     border: 1px solid @very-very-light-gray;
   }
+
   &:focus {
     border: 1px solid @dark-gray;
   }
+
   &--error {
     border: 1px solid @very-light-red;
   }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 10px 11px 19px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 17px;
   }
@@ -99,11 +112,11 @@
   opacity: 0;
 }
 
-.field__input:focus + .field__input-email {
+.field__input:focus+.field__icon {
   color: @green;
 }
 
-.field__input--error + .field__input-email {
+.field__input--error+.field__icon {
   color: @very-light-red;
 }
 
@@ -112,16 +125,19 @@
     max-width: 506px;
   }
 }
+
 .field__input--weight {
   @media (min-width: @desktop-width) {
     max-width: 475px;
   }
 }
+
 .field__input--age {
   @media (min-width: @desktop-width) {
     max-width: 436px;
   }
 }
+
 .field__input--mail {
   @media (min-width: @desktop-width) {
     width: 486px;
@@ -134,41 +150,45 @@
   }
 }
 
-.field__input::-webkit-input-placeholder{
+.field__input::-webkit-input-placeholder {
   color: @basic-black;
 }
 
-.field__input::-moz-placeholder{
+.field__input::-moz-placeholder {
   color: @basic-black;
 }
 
 
-.field__input-email {
+.field__icon--email {
   position: absolute;
   content: "";
   width: 20px;
   height: 14px;
   right: 15px;
+
   @media (min-width: @tablet-width) {
     right: 17px;
   }
 }
 
-.field__input-phone {
+.field__icon--phone {
   position: absolute;
   content: "";
   width: 20px;
   height: 20px;
   right: 13px;
+
   @media (min-width: @tablet-width) {
     right: 17px;
   }
 }
+
 .field__input--textarea {
   resize: both;
   width: 280px;
   min-height: 150px;
   height: 150px;
+
   @media (min-width: @tablet-width) {
     max-width: 631px;
     width: 631px;
@@ -180,6 +200,7 @@
   @media (min-width: @desktop-width) {
     max-width: 1220px;
     min-height: 174px;
+    min-width: 100%;
     margin-left: 0;
   }
 }
